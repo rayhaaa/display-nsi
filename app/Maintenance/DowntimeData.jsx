@@ -32,11 +32,14 @@ export default async function DowntimeData(props) {
 
     let bulan = setBulan(props.bulan)
     return (
-        <div className={`card border rounded my-2 p-2 text-center
-                            ${percen > 80 ? 'bg-[#BB2525]' : 'bg-[#1A5D1A]'}`
-                        }>
-            <p className='text-white font-bold'>{bulan}</p>
-            <p className='text-white'>{percen.toFixed(2)} %</p>
-        </div>
+        <div className="bg-[#FAF1E4] m-5 p-3 rounded-lg">
+      <div
+        className={`card border my-2 text-center rounded-xl p-6
+                            ${percen > 80 ? "bg-[#BB2525]" : "bg-[#1A5D1A]"}`}
+      >
+        <p className="text-white text-[50px] ">{percen.toFixed(2)} %</p>
+      </div>
+        <p className=" text-[30px]">{bulan}</p>
+      </div>
     )
 }
