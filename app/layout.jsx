@@ -1,9 +1,6 @@
 import './globals.css'
-import { Inter, Poppins, Bebas_Neue } from 'next/font/google'
+import { Bebas_Neue } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-
-const popins = Poppins({ subsets: ['latin'], weight: ['100'] })
 
 const bebasNeue = Bebas_Neue({
   subsets: ['latin'],
@@ -18,9 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-      {/* <body className={popins.className}>{children}</body> */}
-      {/* <body>{children}</body> */}
+      <body className={bebasNeue.className}>{children}</body>
     </html>
   )
 }
