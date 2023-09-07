@@ -43,7 +43,7 @@ export default function Home() {
       <div className="col w-full h-[150px] flex justify-center items-center">
         <div className="text-center">
           <div className={bebasNeue.className}>
-            <p className=" text-[64px]">DASHBORD CONTROL MANUFACTURING</p>
+            <p className=" text-[64px]">DASHBOARD CONTROL MANUFACTURING</p>
             <p className=" text-[48px]">{dayDate}</p>
           </div>
         </div>
