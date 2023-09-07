@@ -19,10 +19,10 @@ export default async function ProductionData(props) {
     let data = dataApi.payload.data
     return (
         <>
-            <div className={`card rounded-xl p-9 text-center my-8 
+            <div className={`card rounded-md p-3 text-center
                                 ${data.percen < 80 ? 'bg-[#BB2525]' : 'bg-[#1A5D1A]'}`
                             }>
-                <p className='text-white text-[30px]'>{props.name}</p>
+                <p className='text-white text-[30px] font-bold'>{props.name}</p>
                 <p className='text-white text-[50px]'>{data.percen.toFixed(2)}%</p>
             </div>
         </>
