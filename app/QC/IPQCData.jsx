@@ -29,9 +29,9 @@ export default async function IPQCData() {
     let data = await dataApi();
     return (
         <>
-            <h1 className="text-center text-[30px]">IPQC</h1>
+            <h1 className="text-center text-[35px]">IPQC</h1>
             {data.map(d => (
-                <div key={d.id} className={`card rounded-xl p-2 text-center my-3
+                <div key={d.id} className={`card rounded-xl text-center my-2 p-1
                                                 ${d.percen > 100 ? 'bg-[#BB2525]' : 'bg-[#1A5D1A]'}`
                                             }>
                     <p className='text-white text-[30px]'>{d.section}</p>

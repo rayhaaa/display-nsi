@@ -1,6 +1,14 @@
 import DisplayQc from "./QC/DisplayQc";
 import DisplayProd from "./Production/DisplayProd";
 import DisplayMtc from "./Maintenance/DisplayMtc";
+import { Bebas_Neue } from "next/font/google";
+
+
+const bebas_neue = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  style: "normal",
+});
 
 export default function Home() {
   var arrMonth = [
@@ -27,8 +35,8 @@ export default function Home() {
   return (
     // <main className="flex min-h-screen flex-col items-center justify-between p-10"></main>
     <main className="flex flex-col items-center p-7 w-[1600px] h-[1200px] bg-[#ffffff]">
-      <div className="text-[30px] ">DISPLAY ALL DEPARTMENT</div>
-      <div className="text-[25px]">{dayDate}</div>
+      <div className={`text-[30px] font-bold {bebas_neue}`}>DISPLAY ALL DEPARTMENT</div>
+      <div className="text-[25px] font-bold">{dayDate}</div>
       <br></br>
       <br></br>
       <div className="flex flex-row w-full h-full gap-7 text-center">
