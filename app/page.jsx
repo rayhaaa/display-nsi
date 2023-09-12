@@ -7,10 +7,7 @@ import QualityComponent from "./QC/components/main/page";
 export default function Home() {
 
   return (
-      // {/* main layout */}
-      // <div className="col w-full h-[925px] flex gap-[30px]">
-
-        <>
+      <>
         {/* production */}
         <Link href='/Production' prefetch={false}>
           <ProductionComponent detail='false' />
@@ -32,7 +29,6 @@ export default function Home() {
           {/* sales */}
           <div className="col border h-[400px] rounded-[8px]"></div>
         </div>
-        {/* </div> */}
-        </>
+      </>
   );
 }

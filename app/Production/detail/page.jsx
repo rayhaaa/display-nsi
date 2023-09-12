@@ -5,7 +5,6 @@ import ListProduksiMesin from './list-produksi-mesin/page'
 
 export default function ProductionDetail(props) {
     const nameHeader = props.searchParams.name
-    console.log(props.searchParams.name)
   return (
     <main className='bg-[#D9D9D9] w-full h-full rounded-lg flex flex-col justify-center items-center gap-[38px]'>
         <HeaderSection name={`HISTORY PRODUCTION LINE ${nameHeader}`} />
