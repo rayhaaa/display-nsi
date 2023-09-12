@@ -13,7 +13,6 @@ async function getDataQuality(url) {
 export default async function DepartementQC(props) {
     const dataApi = await getDataQuality(props.url)
     const data = dataApi.payload.data
-    console.log(data)
     return (
         <div className="basis-1/2 rounded-[4px] h-full border border-black flex flex-col p-[10px] gap-[20px]">
             <div className="col h-[50px]">

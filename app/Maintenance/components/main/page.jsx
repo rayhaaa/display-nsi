@@ -1,5 +1,6 @@
 import HeaderSection from '@/app/header/header-section/page'
 import React from 'react'
+import CardMaintenanceRealTime from '../card-realtime/page'
 import CardMaintenance from '../card/page'
 
 export default function MaintenanceComponent() {
@@ -8,7 +9,7 @@ export default function MaintenanceComponent() {
           <HeaderSection name='MAINTENANCE' />
 
           <div className="col h-full gap-[27px] flex flex-col">
-            <CardMaintenance name='Bulan Ini' url='downtime' />
+            <CardMaintenanceRealTime />
             <CardMaintenance name='1 Bulan Lalu' url='downtime-1' />
             <CardMaintenance name='2 Bulan Lalu' url='downtime-2' />
           </div>
