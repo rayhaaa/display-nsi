@@ -29,14 +29,14 @@ export default async function ProductionData(props) {
   return (
     <>
       <div
-        className={`card rounded-lg p-7 text-center my-8 
+        className={`card rounded-lg p-5 text-center my-8 
                                 ${
                                   data.percen < 80
                                     ? "bg-[#BB2525]"
                                     : "bg-[#1A5D1A]"
                                 }`}
       >
-        <p className="text-white text-[30px]">{props.name}</p>
+        <p className="text-white text-[35px]">{props.name}</p>
         <div
           className={`text-white text-[50px] font-[${bebas_neue.className}]`}
         >

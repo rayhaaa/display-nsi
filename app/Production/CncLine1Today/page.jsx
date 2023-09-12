@@ -1,6 +1,6 @@
 import { Bebas_Neue } from "next/font/google";
 import React from "react";
-import CamToday from "../CamToday";
+import Cnc1Today from "../Cnc1Today";
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -41,7 +41,7 @@ export default async function halProd() {
             </div>
           </div>
           <div className="bg-[#d9d9d9] w-full h-full rounded-lg text-center p-5 m-5">
-            <div className="text-[35px]"> PRODUKSI CAM HARI INI</div>
+            <div className="text-[35px]"> PRODUKSI CNC LINE 1 HARI INI</div>
             <div className="m-5">
               <div className="flex flex-row w-full bg-[#A5A3A3] text-[35px] text-white rounded-xl p-1">
                 <div className="w-full">No Mesin</div>
@@ -50,10 +50,10 @@ export default async function halProd() {
                 <div className="w-full">Persentase</div>
               </div>
               <div className="w-full text-center">
-                <CamToday />
+                <Cnc1Today />
               </div>
               <div className="flex flex-row gap-5 object-right m-5">
-                <div className="bg-[#A5A3A3] text-[35px] rounded-lg p-3">LINE CAM PRODUCTION PRECENTAGE</div>
+                <div className="bg-[#A5A3A3] text-[35px] rounded-lg p-3">CNC LINE 1 PRODUCTION PRECENTAGE</div>
                 <div className="bg-[#A5A3A3] text-[35px] rounded-lg p-3">persen%</div>
               </div>
             </div>

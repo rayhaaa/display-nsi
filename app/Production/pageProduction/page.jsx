@@ -52,10 +52,10 @@ export default async function halProd() {
                 <Link href="../Production/CncLine1Today">
                   <ProductionData name="CNC LINE 1" line="cnc-1" />
                 </Link>
-                <Link href="../Production/CncLine1Today">
+                <Link href="../Production/CncLine2Today">
                   <ProductionData name="CNC LINE 2" line="cnc-2" />
                 </Link>
-                <Link href="../Production/CncLine1Today">
+                <Link href="../Production/CncLine3Today">
                   <ProductionData name="CNC LINE 3" line="cnc-3" />
                 </Link>
               </div>

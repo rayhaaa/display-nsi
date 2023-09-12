@@ -1,7 +1,7 @@
 import React from "react";
 
-async function getDataCamToday(line) {
-  let res = await fetch(`http://192.168.10.75:3004/api/line-cnc1`, {
+async function getDataCnc1Today(line) {
+  let res = await fetch(`http://192.168.10.75:3004/api/line-1`, {
     next: {
       revalidate: 0,
     },
@@ -15,8 +15,8 @@ async function getDataCamToday(line) {
 }
 
 async function dataApi() {
-  let camData = await getDataCamToday();
-  let dataApi = camData.payload.data;
+  let cnc1Data = await getDataCnc1Today();
+  let dataApi = cnc1Data.payload.data;
   let data = dataApi.map((d) => ({
     ...d,
     // percen: (d.aktual / d.target) * 100,
@@ -25,7 +25,7 @@ async function dataApi() {
   return data;
 }
 
-export default async function CamToday(props) {
+export default async function Cnc1Today(props) {
   let data = await dataApi(props.line);
   return (
     <>
@@ -35,7 +35,11 @@ export default async function CamToday(props) {
             <div className="w-full">{d.mcn}</div>
             <div className="w-full">{d.itemCode}</div>
             <div className="w-full">{d.planQty}</div>
-            <div className="w-full">{d.percen}%</div>
+            <div className={`w-full ${
+                                                  d.percen < 80
+                                                    ? "bg-[#BB2525]"
+                                                    : "bg-[#1A5D1A]"
+                                                }`}>{d.percen.toFixed(2)}%</div>
           </div>
         ))}
       </div>

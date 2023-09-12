@@ -40,7 +40,7 @@ export default async function OQCData() {
                                                     : "bg-[#1A5D1A]"
                                                 }`}
         >
-          <p className="text-white text-[30px]">{d.section}</p>
+          <p className="text-white text-[35px]">{d.section}</p>
           <p className="text-white text-[50px]">{d.percen.toFixed(2)}%</p>
         </div>
       ))}
