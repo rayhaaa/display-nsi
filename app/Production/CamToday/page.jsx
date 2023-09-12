@@ -1,5 +1,6 @@
 import { Bebas_Neue } from "next/font/google";
 import React from "react";
+import CamToday from "../CamToday";
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -39,18 +40,22 @@ export default async function halProd() {
               <p className=" text-[48px]">{dayDate}</p>
             </div>
           </div>
-          <div className="bg-[#d9d9d9] w-full h-full rounded-lg text-center p-7 m-5">
+          <div className="bg-[#d9d9d9] w-full h-full rounded-lg text-center p-5 m-5">
             <div className="text-[35px]"> PRODUKSI CAM HARI INI</div>
             <div className="m-5">
-                <div className="flex flex-row w-full bg-[#4A503D] text-[35px] text-white rounded-xl">
-                    <div className="w-full">No Mesin</div>
-                    <div className="w-full">Seri Mesin</div>
-                    <div className="w-full">Plan Quantity</div>
-                    <div className="w-full">Persentase</div>
-                </div>
-                <div>
-                    <div></div>
-                </div>
+              <div className="flex flex-row w-full bg-[#A5A3A3] text-[35px] text-white rounded-xl p-1">
+                <div className="w-full">No Mesin</div>
+                <div className="w-full">Seri Mesin</div>
+                <div className="w-full">Plan Quantity</div>
+                <div className="w-full">Persentase</div>
+              </div>
+              <div className="w-full text-center">
+                <CamToday />
+              </div>
+              <div className="flex flex-row gap-5 object-right m-5">
+                <div className="bg-[#A5A3A3] text-[35px] rounded-lg p-3">LINE CAM PRODUCTION PRECENTAGE</div>
+                <div className="bg-[#A5A3A3] text-[35px] rounded-lg p-3">persen%</div>
+              </div>
             </div>
           </div>
         </div>

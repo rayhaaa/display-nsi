@@ -41,8 +41,8 @@ export default function Home() {
               <p className=" text-[48px]">{dayDate}</p>
             </div>
           </div>
-          <div className="flex flex-row w-full h-full gap-7 text-center">
-            <div className="basis-1/4  bg-[#D9D9D9] rounded-xl">
+          <div className="flex flex-row w-full h-full gap-7 text-center m-7">
+            <div className="basis-1/4 bg-[#D9D9D9] rounded-xl">
               <DisplayProd />
             </div>
             <div className="basis-1/4  bg-[#D9D9D9] rounded-xl">

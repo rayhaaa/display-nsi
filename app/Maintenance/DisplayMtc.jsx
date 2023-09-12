@@ -5,8 +5,8 @@ import Link from "next/link";
 export default async function DisplayMtc() {
   return (
     <>
-      <div className="text-center mt-5 text-[40px] font-bold">DOWNTIME</div>
-      <div className="text-center text-[40px] font-bold">MESIN RUSAK</div>
+      <div className="text-center mt-5 text-[40px]">DOWNTIME</div>
+      <div className="text-center text-[40px]">MESIN RUSAK</div>
       <div className="mt-5">
         <Link href="../Maintenance/pageMaintenance">
           <DowntimeData url="downtime" bulan="0" />

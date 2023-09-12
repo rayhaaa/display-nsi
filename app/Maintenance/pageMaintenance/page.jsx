@@ -65,11 +65,11 @@ export default async function halMtc() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col h-full w-full bg-[#D9D9D9] p-7 m-5 gap-7 rounded-lg ">
+        <div className="flex flex-col h-full w-full bg-[#D9D9D9] p-7 m-5 gap-7 rounded-xl ">
           <div className=" bg-[#ffffff] rounded-lg p-3">
             <div className={bebas_neue.className}>
               <div className="text-center text-[40px]">daftar Mesin Rusak</div>
-              <div className="flex flex-row capitalize rounded-md p-1 bg-[#A5A3A3] text-white text-[35px] text-center">
+              <div className="flex flex-row capitalize rounded-xl p-1 bg-[#A5A3A3] text-white text-[35px] text-center">
                 <div className="w-full">No Mesin</div>
                 <div className="w-full">Status Mesin</div>
                 <div className="w-full">PIC</div>

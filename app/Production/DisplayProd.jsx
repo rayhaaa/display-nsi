@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function DisplayProd() {
   return (
     <>
-      <div className="text-center mt-5 text-[40px] font-bold">PRODUCTION</div>
+      <div className="text-center mt-5 text-[40px] ">PRODUCTION</div>
       <div className="mx-5">
         <Link href="../Production/pageProduction">
           <ProductionData name="CAM" line="cam" />

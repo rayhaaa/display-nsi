@@ -49,19 +49,18 @@ export default async function halMtc() {
   return (
     <>
       <div className={bebas_neue.className}>
-        <div className="flex flex-col items-center p-7 w-[1600px] h-[1200px] bg-[#ffffff]">
+        <div className="flex flex-col items-center p-8 w-[1600px] h-[1200px] bg-[#ffffff]">
           <div className="col w-full h-[150px] flex justify-center items-center">
             <div className="text-center">
               <p className=" text-[64px]">DASHBOARD CONTROL MANUFACTURING</p>
               <p className=" text-[48px]">{dayDate}</p>
             </div>
           </div>
-          <div className="flex flex-col  h-full w-full bg-[#D9D9D9] p-7 m-5 gap-7 rounded-lg">
-            {/* <div className={bebas_neue.className}> */}
-            <div className="basis-2/5 bg-[#ffffff] rounded-lg text-center ">
+          <div className="flex flex-col h-full w-full bg-[#D9D9D9]  p-7 gap-7 rounded-xl">
+            <div className="h-full bg-[#ffffff] text-center">
               <table className="table-auto w-full h-full">
                 <thead className="text-[30px]">
-                  <th className="border border-gray-600 rounded-tl-lg"></th>
+                  <th className="border border-gray-600"></th>
                   <th className="border border-gray-600" colSpan="2">
                     OQC
                   </th>
@@ -70,28 +69,28 @@ export default async function halMtc() {
                   </th>
                 </thead>
                 <tbody>
-                  <tr className="text-[35px] font-bold">
+                  <tr className="text-[40px]">
                     <td className="border border-gray-600"></td>
                     <td className="border border-gray-600">Target</td>
                     <td className="border border-gray-600">Aktual</td>
                     <td className="border border-gray-600">Target</td>
                     <td className="border border-gray-600">Aktual</td>
                   </tr>
-                  <tr className="text-[35px] font-bold">
+                  <tr className="text-[45px]">
                     <td className="border border-gray-600">CAM</td>
                     <td className="border border-gray-600">6</td>
                     <td className="border border-gray-600">3</td>
                     <td className="border border-gray-600">7</td>
                     <td className="border border-gray-600">0</td>
                   </tr>
-                  <tr className="text-[35px] font-bold">
+                  <tr className="text-[45px]">
                     <td className="border border-gray-600">CNC</td>
                     <td className="border border-gray-600">12</td>
                     <td className="border border-gray-600">4</td>
                     <td className="border border-gray-600">6</td>
                     <td className="border border-gray-600">9</td>
                   </tr>
-                  <tr className="text-[35px] font-bold">
+                  <tr className="text-[45px] ">
                     <td className="border border-gray-600">MFG</td>
                     <td className="border border-gray-600">5</td>
                     <td className="border border-gray-600">1</td>
@@ -101,32 +100,32 @@ export default async function halMtc() {
                 </tbody>
               </table>
             </div>
-            <div className="flex flex-row basis-3/5 gap-7 text-center ">
+            <div className="flex flex-row h-full gap-7 text-center ">
               <div className="text-center w-full h-full bg-[#ffffff] rounded-xl">
                 <div className="text-center font-bold text-[30px] uppercase">
                   bulan ini
                 </div>
                 <div>
                   <div className="flex flex-row p-5 gap-5 ">
-                    <div className="w-full rounded-lg bg-[#9AAD8E] p-5 ">
+                    <div className="w-full rounded-lg bg-[#A5A3A3] p-5 ">
                       <OQCData />
                     </div>
-                    <div className="basis-1/2 rounded-lg bg-[#9AAD8E] p-5">
+                    <div className="w-full rounded-lg bg-[#A5A3A3] p-5">
                       <IPQCData />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="text-center w-full h-full bg-[#ffffff] rounded-xl">
-                <div className="text-center font-bold text-[30px] uppercase mt-3">
+                <div className="text-center font-bold text-[30px] uppercase">
                   bulan lalu
                 </div>
                 <div>
                   <div className="flex flex-row p-5 gap-5 ">
-                    <div className="basis-1/2 rounded-lg bg-[#9AAD8E] p-5 ">
+                    <div className="w-full rounded-xl bg-[#A5A3A3] p-5 ">
                       <OQCData />
                     </div>
-                    <div className="basis-1/2 rounded-lg bg-[#9AAD8E] p-5">
+                    <div className="w-full rounded-xl bg-[#A5A3A3] p-5">
                       <IPQCData />
                     </div>
                   </div>

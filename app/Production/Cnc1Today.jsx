@@ -1,7 +1,7 @@
 import React from "react";
 
 async function getDataCamToday(line) {
-  let res = await fetch(`http://192.168.10.75:3004/api/line-cam`, {
+  let res = await fetch(`http://192.168.10.75:3004/api/line-cnc1`, {
     next: {
       revalidate: 0,
     },

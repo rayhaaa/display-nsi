@@ -42,7 +42,7 @@ export default async function halProd() {
           <div className="bg-[#d9d9d9] w-full h-full rounded-lg text-center p-7 m-5">
             <div className="text-[35px]"> PRODUKSI CNC LINE 3 HARI INI</div>
             <div className="m-5">
-                <div className="flex flex-row w-full bg-[#4A503D] text-[35px] text-white rounded-xl">
+                <div className="flex flex-row w-full bg-[#A5A3A3] text-[35px] text-white rounded-xl">
                     <div className="w-full">No Mesin</div>
                     <div className="w-full">Seri Mesin</div>
                     <div className="w-full">Plan Quantity</div>

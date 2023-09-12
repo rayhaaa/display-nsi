@@ -19,7 +19,7 @@ export default async function HistoryProduction(props) {
 //   let data = dataApi.payload.data;
   return (
     <>
-      <div className="flex flex-row bg-[#ADBDC3] w-full text-[35px] text-center">
+      <div className="flex flex-row bg-[#ADBDC3] w-full text-[35px] text-center rounded-xl m-3">
         <div className={`w-full`}>
           {props.cam}%
         </div>

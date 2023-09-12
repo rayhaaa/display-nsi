@@ -33,33 +33,17 @@ export default async function IPQCData() {
       {data.map((d) => (
         <div
           key={d.id}
-          className={`card rounded-xl text-center my-2 p-1
+          className={`card rounded-lg text-center my-2 p-1
                                                 ${
                                                   d.percen > 100
                                                     ? "bg-[#BB2525]"
                                                     : "bg-[#1A5D1A]"
                                                 }`}
         >
-          <p className="text-white text-[30px]">CNC</p>
-          <p className="text-white text-[50px]">100%</p>
+          <p className="text-white text-[30px]">{d.section}</p>
+          <p className="text-white text-[50px]">{d.percen}%</p>
         </div>
       ))}
     </>
   );
 }
-// export default async function IPQCData() {
-//     let data = await dataApi();
-//     return (
-//         <>
-//             <h1 className="text-center text-[35px]">IPQC</h1>
-//             {data.map(d => (
-//                 <div key={d.id} className={`card rounded-xl text-center my-2 p-1
-//                                                 ${d.percen > 100 ? 'bg-[#BB2525]' : 'bg-[#1A5D1A]'}`
-//                                             }>
-//                     <p className='text-white text-[30px]'>{d.section}</p>
-//                     <p className='text-white text-[50px]'>{d.percen.toFixed(2)}%</p>
-//                 </div>
-//             ))}
-//         </>
-//     )
-// }

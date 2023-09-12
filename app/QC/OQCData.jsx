@@ -33,7 +33,7 @@ export default async function OQCData() {
       {data.map((d) => (
         <div
           key={d.id}
-          className={`card  rounded-xl text-center my-2 p-1
+          className={`card  rounded-lg text-center my-2 p-1
                                                 ${
                                                   d.percen > 100
                                                     ? "bg-[#BB2525]"

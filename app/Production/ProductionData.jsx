@@ -29,7 +29,7 @@ export default async function ProductionData(props) {
   return (
     <>
       <div
-        className={`card rounded-xl p-7 text-center my-8 
+        className={`card rounded-lg p-7 text-center my-8 
                                 ${
                                   data.percen < 80
                                     ? "bg-[#BB2525]"
