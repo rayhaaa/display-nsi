@@ -1,7 +1,7 @@
 import React from 'react'
 
 async function getDataProductions(url) {
-    const res = await fetch(`http://192.168.10.75:3004/${url}`, {next: {revalidate: 0}})
+    const res = await fetch(`http://192.168.10.75:3004/api/${url}`, {next: {revalidate: 0}})
 
     if (!res.ok) {
         throw new Error('Failed to fetch data')

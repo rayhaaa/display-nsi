@@ -1,5 +1,6 @@
 import './globals.css'
 import { Bebas_Neue } from 'next/font/google'
+import Header from './header/header-main/page'
 
 
 const bebasNeue = Bebas_Neue({
@@ -15,7 +16,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={bebasNeue.className}>{children}</body>
+      <body className={bebasNeue.className}>
+        <main>
+          <div className="flex flex-col h-[1200px] w-[1600px] p-[30px] bg-[#9DA5EE] gap-[25px]">
+            <Header />
+            <div className="col w-full h-[925px] flex gap-[30px]">
+              {children}
+            </div>
+          </div>
+        </main>
+      </body>
     </html>
   )
 }
