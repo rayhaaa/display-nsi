@@ -1,6 +1,7 @@
 import React from "react";
 import { Bebas_Neue } from "next/font/google";
 import ComponentBulan from "../ComponentBulan";
+import Link from "next/link";
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -40,21 +41,50 @@ export default async function halMtc() {
               <p className=" text-[64px]">DASHBOARD CONTROL MANUFACTURING</p>
               <p className=" text-[48px]">{dayDate}</p>
             </div>
-            {/* </div> */}
           </div>
-          <div className="bg-[#d9d9d9] w-full h-full rounded-lg p-5 m-5 text-center">
-            <div className="flex flex-row w-full m-5 gap-5 ">
-              <div className="w-full m-5 gap-5 bg-[#ffffff] rounded-xl">
-                <ComponentBulan bulan="Januari" />
+          <div className="flex flex-col bg-[#d9d9d9] gap-7 w-full h-full rounded-lg p-7 m-5 text-center">
+            <div className="flex flex-row h-full gap-10">
+              <Link href="../Marketing/pageMarketing2">
+                <div className="w-full h-full">
+                  <ComponentBulan bulan="Januari" />
+                </div>
+              </Link>
+              <div className="w-full h-full">
+                <ComponentBulan bulan="Februari" />
               </div>
-              <div className="w-full m-3 gap-5 bg-[#ffffff] rounded-xl">
-                <ComponentBulan bulan="Januari" />
+              <div className="w-full h-full">
+                <ComponentBulan bulan="Maret" />
               </div>
-              <div className="w-full m-5 gap-5 bg-[#ffffff] rounded-xl">
-                <ComponentBulan bulan="Januari" />
+              <div className="w-full h-full">
+                <ComponentBulan bulan="April" />
               </div>
-              <div className="w-full m-5 gap-5 bg-[#ffffff] rounded-xl">
-                <ComponentBulan bulan="Januari" />
+            </div>
+            <div className="flex flex-row h-full gap-10">
+              <div className="w-full h-full">
+                <ComponentBulan bulan="Mei" />
+              </div>
+              <div className="w-full h-full">
+                <ComponentBulan bulan="Juni" />
+              </div>
+              <div className="w-full h-full">
+                <ComponentBulan bulan="Juli" />
+              </div>
+              <div className="w-full h-full">
+                <ComponentBulan bulan="Agustus" />
+              </div>
+            </div>
+            <div className="flex flex-row h-full gap-10">
+              <div className="w-full h-full">
+                <ComponentBulan bulan="September" />
+              </div>
+              <div className="w-full h-full">
+                <ComponentBulan bulan="Oktober" />
+              </div>
+              <div className="w-full h-full">
+                <ComponentBulan bulan="November" />
+              </div>
+              <div className="w-full h-full">
+                <ComponentBulan bulan="Desember" />
               </div>
             </div>
           </div>

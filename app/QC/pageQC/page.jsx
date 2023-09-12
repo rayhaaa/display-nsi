@@ -4,7 +4,7 @@ import OQCData from "../OQCData";
 import IPQCData from "../IPQCData";
 
 async function getProductionsData(line) {
-  let res = await fetch(`http://192.168.10.75:3004/line`, {
+  let res = await fetch(`http://192.168.10.75:3004/api/line`, {
     next: {
       revalidate: 0,
     },
@@ -55,7 +55,6 @@ export default async function halMtc() {
               <p className=" text-[64px]">DASHBOARD CONTROL MANUFACTURING</p>
               <p className=" text-[48px]">{dayDate}</p>
             </div>
-            {/* </div> */}
           </div>
           <div className="flex flex-col  h-full w-full bg-[#D9D9D9] p-7 m-5 gap-7 rounded-lg">
             {/* <div className={bebas_neue.className}> */}
@@ -109,7 +108,7 @@ export default async function halMtc() {
                 </div>
                 <div>
                   <div className="flex flex-row p-5 gap-5 ">
-                    <div className="basis-1/2 rounded-lg bg-[#9AAD8E] p-5 ">
+                    <div className="w-full rounded-lg bg-[#9AAD8E] p-5 ">
                       <OQCData />
                     </div>
                     <div className="basis-1/2 rounded-lg bg-[#9AAD8E] p-5">

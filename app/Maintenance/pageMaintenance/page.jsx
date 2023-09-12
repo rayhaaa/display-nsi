@@ -4,15 +4,15 @@ import { Bebas_Neue } from "next/font/google";
 import ChartDowntime from "../ChartDowntime";
 import DataMesinRusak from "../DataMesinRusak";
 
-// async function getDataMachines() {
-//   const res = await fetch(`http://192.168.10.75:3003/data-downtime`, {
-//     next: {
-//       revalidate: 0,
-//     },
-//   });
-//   // console.log(res)
-//   return res.json();
-// }
+async function getDataMachines() {
+  const res = await fetch(`http://192.168.10.75:3003/api/data-downtime`, {
+    next: {
+      revalidate: 0,
+    },
+  });
+  // console.log(res)
+  return res.json();
+}
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -21,7 +21,7 @@ const bebas_neue = Bebas_Neue({
 });
 
 export default async function halMtc() {
-  // const machines = await getDataMachines();
+  const machines = await getDataMachines();
   var monthArr = [
     "Januari",
     "Februari",

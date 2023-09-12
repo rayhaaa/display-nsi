@@ -1,7 +1,7 @@
 import React from "react";
 
 async function getDataDowntime(url) {
-  let res = await fetch(`http://192.168.10.75:3003/${url}`, {
+  let res = await fetch(`http://192.168.10.75:3003/api/${url}`, {
     next: {
       revalidate: 0,
     },

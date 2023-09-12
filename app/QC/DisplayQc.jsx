@@ -1,20 +1,24 @@
 import React from "react";
 import OQCData from "./OQCData";
 import IPQCData from "./IPQCData";
+import Link from "next/link";
 
 export default async function DisplayQc() {
   return (
     <>
-      <div className="text-center mt-5 text-[30px] font-bold"> CLAIM QC</div>
-        <div className="flex flex-row p-7 gap-5">
-          <div className="basis-1/2 rounded-lg bg-[#9AAD8E] p-5 ">
+      <div className="text-center mt-5 text-[40px] font-bold"> CLAIM QC</div>
+      <div className="flex flex-row p-7 gap-5">
+        <div className="basis-1/2 rounded-lg bg-[#9AAD8E] p-5 ">
+          <Link href="../QC/pageQC">
             <OQCData />
-          </div>
-          <div className="basis-1/2 rounded-lg bg-[#9AAD8E] p-5">
-            <IPQCData />
-          </div>
+          </Link>
         </div>
-      
+        <div className="basis-1/2 rounded-lg bg-[#9AAD8E] p-5">
+          <Link href="../QC/pageQC">
+            <IPQCData />
+          </Link>
+        </div>
+      </div>
     </>
   );
 }

@@ -50,7 +50,7 @@ export default function ChartDowntime() {
     gradient.addColorStop(1, colors.red.zero);
 
     const weight = [
-      2000, 2000, 1992, 1900, 1982, 2056, 1858, 1801, 1864, 1907, 2067, 1848,
+      2000, 2000, 1992, 1900, 1982, 2016, 1858, 1951, 1864, 0, 3027, 1848,
     ];
 
     const labels = [
