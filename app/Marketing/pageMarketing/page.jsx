@@ -42,54 +42,70 @@ export default async function halMtc() {
               <p className=" text-[48px]">{dayDate}</p>
             </div>
           </div>
-          <div className="flex flex-col bg-[#d9d9d9] gap-7 w-full h-full rounded-lg p-7 m-5 text-center">
-            <div className="flex flex-row h-full gap-10">
-              <Link href="../Marketing/pageMarketing2">
-                <div className="w-full h-full">
-                  <ComponentBulan bulan="Januari" />
-                </div>
-              </Link>
+          <div className="inline-grid grid-cols-4 bg-[#d9d9d9] gap-7 w-full h-full rounded-lg p-7 m-5 text-center">
+            <Link href="../Marketing/pageMarketing2">
+              <div className="w-full h-full">
+                <ComponentBulan bulan="Januari" />
+              </div>
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="Februari" />
               </div>
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="Maret" />
               </div>
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="April" />
               </div>
-            </div>
-            <div className="flex flex-row h-full gap-10">
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="Mei" />
               </div>
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="Juni" />
               </div>
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="Juli" />
               </div>
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="Agustus" />
               </div>
-            </div>
-            <div className="flex flex-row h-full gap-10">
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="September" />
               </div>
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="Oktober" />
               </div>
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="November" />
               </div>
+            </Link>
+            <Link href="../Marketing/pageMarketing2">
               <div className="w-full h-full">
                 <ComponentBulan bulan="Desember" />
               </div>
+            </Link>
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 }

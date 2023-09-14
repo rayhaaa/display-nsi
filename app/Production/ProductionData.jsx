@@ -1,6 +1,5 @@
 import React from "react";
 import { Bebas_Neue } from "next/font/google";
-// import Link from "next/link";
 
 async function getProductionsData(line) {
   let res = await fetch(`http://192.168.10.75:3004/api/${line}`, {
@@ -19,7 +18,6 @@ async function getProductionsData(line) {
 const bebas_neue = Bebas_Neue({
   weight: "400",
   subsets: ["latin"],
-  // style: "normal",
 });
 
 export default async function ProductionData(props) {
@@ -29,11 +27,17 @@ export default async function ProductionData(props) {
   return (
     <>
       <div
-        className={`card rounded-lg p-5 text-center my-8 
-                                ${
-                                  data.percen < 80
-                                    ? "bg-[#BB2525]"
-                                    : "bg-[#1A5D1A]"
+        className={`card rounded-lg p-5 text-center my-8
+                                ${ 
+                                  props.name === "CAM" ?
+                                    data.percen < 80
+                                      ? "bg-[#BB2525]"
+                                      : "bg-[#1A5D1A]"
+                                  :
+                                    data.percen < 85
+                                      ? "bg-[#BB2525]"
+                                      : "bg-[#1A5D1A]"
+                                  }
                                 }`}
       >
         <p className="text-white text-[35px]">{props.name}</p>

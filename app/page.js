@@ -42,17 +42,17 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-row w-full h-full gap-7 text-center m-7">
-            <div className="basis-1/4 bg-[#D9D9D9] rounded-xl">
+            <div className="basis-1/4 h-full w-full bg-[#D9D9D9] rounded-xl">
               <DisplayProd />
             </div>
-            <div className="basis-1/4  bg-[#D9D9D9] rounded-xl">
+            <div className="basis-1/4 h-full w-full bg-[#D9D9D9] rounded-xl">
               <DisplayMtc />
             </div>
-            <div className="flex flex-col basis-1/2 h-full gap-5">
+            <div className="flex flex-col h-full w-full basis-1/2 h-full gap-5">
               <div className="basis-2/3  bg-[#D9D9D9] rounded-xl">
                 <DisplayQc />
               </div>
-              <div className="basis-2/3  bg-[#D9D9D9] rounded-xl basis-1/3  bg-[#D9D9D9]">marketing</div>
+              <div className="basis-2/3 h-full w-full bg-[#D9D9D9] rounded-xl basis-1/3  bg-[#D9D9D9]">marketing</div>
             </div>
           </div>
           

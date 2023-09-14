@@ -11,7 +11,7 @@ export default function Loading() {
     <main className="h-full w-full flex justify-center items-center">
       <div className={bebas_neue.className}>
         <h2 className=" text-[98px]">
-          <span className="text-stroke">Loading...</span>
+          <span className="text-stroke w-full h-full">Loading...</span>
         </h2>
       </div>
     </main>

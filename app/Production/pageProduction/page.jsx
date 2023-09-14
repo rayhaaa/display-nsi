@@ -3,6 +3,7 @@ import React from "react";
 import ProductionData from "../ProductionData";
 import HistoryProduction from "../HistoryProduction";
 import Link from "next/link";
+import Arrow from "../Arrow";
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -10,7 +11,6 @@ const bebas_neue = Bebas_Neue({
 });
 
 export default async function halProd() {
-  //   const machines = await getDataMachines();
   var monthArr = [
     "Januari",
     "Februari",
@@ -37,12 +37,19 @@ export default async function halProd() {
       <div className={bebas_neue.className}>
         <div className="flex flex-col items-center p-7 w-[1600px] h-[1200px] bg-[#ffffff]">
           <div className="col w-full h-[150px] flex justify-center items-center">
+          <div className="flex flex-row ">
+            <Link href="/">
+              <div className="absolute top-7 left-7">
+                <Arrow />
+              </div>
+            </Link>
             <div className="text-center">
               <p className=" text-[64px]">DASHBOARD CONTROL MANUFACTURING</p>
               <p className=" text-[48px]">{dayDate}</p>
             </div>
+            </div>
           </div>
-          <div className=" w-full h-full p-5 m-5">
+          <div className=" w-full h-full p-5 m-7">
             <div className="flex flex-row w-full h-full gap-7">
               <div className="bg-[#d9d9d9] basis-1/4 h-full rounded-xl p-5">
                 <div className="text-[40px] text-center ">PRODUCTION</div>
@@ -72,161 +79,7 @@ export default async function halProd() {
                       <div className="w-full">CNC 3</div>
                       <div className="w-full">TANGGAL</div>
                     </div>
-                    <div className="overflow-y-auto h-[750px]">
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
-                      <HistoryProduction
-                        cam="89.06"
-                        cnc1="94.22"
-                        cnc2="89.98"
-                        cnc3="91.28"
-                        tanggal="10/09/2023"
-                      />
+                    <div className="overflow-y-auto h-[750px] w-full">
                       <HistoryProduction
                         cam="89.06"
                         cnc1="94.22"

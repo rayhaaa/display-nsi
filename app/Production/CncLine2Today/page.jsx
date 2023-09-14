@@ -1,6 +1,8 @@
 import { Bebas_Neue } from "next/font/google";
 import React from "react";
 import Cnc2Today from "../Cnc2Today";
+import Link from "next/link";
+import Arrow from "../arrow";
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -8,7 +10,6 @@ const bebas_neue = Bebas_Neue({
 });
 
 export default async function halProd() {
-  //   const machines = await getDataMachines();
   var monthArr = [
     "Januari",
     "Februari",
@@ -34,10 +35,17 @@ export default async function halProd() {
     <>
       <div className={bebas_neue.className}>
         <div className="flex flex-col items-center p-7 w-[1600px] h-[1200px] bg-[#ffffff]">
-          <div className="col w-full h-[150px] flex justify-center items-center">
-            <div className="text-center">
-              <p className=" text-[64px]">DASHBOARD CONTROL MANUFACTURING</p>
-              <p className=" text-[48px]">{dayDate}</p>
+          <div className="flex flex-row ">
+            <Link href="../Production/pageProduction">
+              <div className="absolute top-7 left-7 h-[100px] w-[100px]">
+                <Arrow />
+              </div>
+            </Link>
+            <div className="col w-full h-[150px] flex justify-center items-center">
+              <div className="text-center">
+                <p className=" text-[64px]">DASHBOARD CONTROL MANUFACTURING</p>
+                <p className=" text-[48px]">{dayDate}</p>
+              </div>
             </div>
           </div>
           <div className="bg-[#d9d9d9] w-full h-full rounded-lg text-center p-5 m-5">
@@ -51,10 +59,6 @@ export default async function halProd() {
               </div>
               <div className="w-full text-center">
                 <Cnc2Today />
-              </div>
-              <div className="flex flex-row gap-5 object-right m-5">
-                <div className="bg-[#A5A3A3] text-[35px] rounded-lg p-3">CNC LINE 1 PRODUCTION PRECENTAGE</div>
-                <div className="bg-[#A5A3A3] text-[35px] rounded-lg p-3">persen%</div>
               </div>
             </div>
           </div>

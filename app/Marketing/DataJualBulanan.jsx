@@ -8,7 +8,13 @@ export default async function DataJualBulanan(props) {
           <div className="w-full">{props.customer}</div>
           <div className="w-full">{props.targetbeli}</div>
           <div className="w-full">{props.totalbeli}</div>
-          <div className="w-full">{props.persen}</div>
+          <div
+            className={`${
+              props.persen < 90 ? "bg-[#BB2525]" : "bg-[#1A5D1A]"
+            } w-full`}
+          >
+            {props.persen}
+          </div>
         </div>
       </div>
     </>
