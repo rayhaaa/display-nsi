@@ -27,7 +27,7 @@ export default async function DataMesinRusak(props) {
         <div className="flex flex-row text-[35px] bg-[#D9D9D9] rounded-xl border">
           <div className="w-full">{d.no_mesin}</div>
           <div className="w-full">{d.status_aktifitas}</div>
-          <div className="w-full">{d.pic}</div>
+          <div className="w-full">{d.tgl_kerusakan}</div>
           <div className="w-full">{d.total_downtime} jam</div>
         </div>
       </div>

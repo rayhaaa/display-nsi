@@ -1,6 +1,20 @@
 import React from "react";
 
-async function getDataCnc2Today(line) {
+async function getProductionsData() {
+  let res = await fetch(`http://192.168.10.75:3004/api/cnc-2`, {
+    next: {
+      revalidate: 0,
+    },
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+async function getDataCnc2Today() {
   let res = await fetch(`http://192.168.10.75:3004/api/line-2`, {
     next: {
       revalidate: 0,
@@ -19,7 +33,6 @@ async function dataApi() {
   let dataApi = cnc2Data.payload.data;
   let data = dataApi.map((d) => ({
     ...d,
-    // percen: (d.aktual / d.target) * 100,
   }));
 
   return data;
@@ -27,6 +40,8 @@ async function dataApi() {
 
 export default async function Cnc2Today(props) {
   let data = await dataApi(props.line);
+  let data1 = await getProductionsData()
+  let persen = data1.payload.data.percen
   return (
     <>
     {data.length !== 0 ? (
@@ -50,12 +65,14 @@ export default async function Cnc2Today(props) {
             </div>
           ))}
         </div>
-        <div className="flex flex-row gap-5 object-right m-5">
+        <div className="flex flex-row gap-5 justify-end m-5">
           <div className="bg-[#A5A3A3] text-[35px] rounded-lg p-3">
             persentase cnc line 2 hari ini
           </div>
-          <div className="bg-[#A5A3A3] text-[35px] rounded-lg p-3">
-            persen%
+          <div className={`text-white ${
+                    persen < 85 ? "bg-[#BB2525]" : "bg-[#1A5D1A]"
+                  } text-[35px] rounded-lg p-3`}>
+            {persen.toFixed(2)}%
           </div>
         </div>
       </div>

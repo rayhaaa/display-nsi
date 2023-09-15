@@ -2,7 +2,7 @@ import { Bebas_Neue } from "next/font/google";
 import React from "react";
 import Cnc2Today from "../Cnc2Today";
 import Link from "next/link";
-import Arrow from "../arrow";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -36,9 +36,9 @@ export default async function halProd() {
       <div className={bebas_neue.className}>
         <div className="flex flex-col items-center p-7 w-[1600px] h-[1200px] bg-[#ffffff]">
           <div className="flex flex-row ">
-            <Link href="../Production/pageProduction">
+            <Link href="javascript:history.back()">
               <div className="absolute top-7 left-7 h-[100px] w-[100px]">
-                <Arrow />
+                <FaArrowLeft size={38} />
               </div>
             </Link>
             <div className="col w-full h-[150px] flex justify-center items-center">
@@ -53,7 +53,7 @@ export default async function halProd() {
             <div className="m-5">
               <div className="flex flex-row w-full bg-[#A5A3A3] text-[35px] text-white rounded-xl p-1">
                 <div className="w-full">No Mesin</div>
-                <div className="w-full">Seri Mesin</div>
+                <div className="w-full">Receive Quantity</div>
                 <div className="w-full">Plan Quantity</div>
                 <div className="w-full">Persentase</div>
               </div>

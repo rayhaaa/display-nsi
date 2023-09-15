@@ -3,7 +3,7 @@ import React from "react";
 import ProductionData from "../ProductionData";
 import HistoryProduction from "../HistoryProduction";
 import Link from "next/link";
-import Arrow from "../Arrow";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const bebas_neue = Bebas_Neue({
   weight: "400",
@@ -37,16 +37,16 @@ export default async function halProd() {
       <div className={bebas_neue.className}>
         <div className="flex flex-col items-center p-7 w-[1600px] h-[1200px] bg-[#ffffff]">
           <div className="col w-full h-[150px] flex justify-center items-center">
-          <div className="flex flex-row ">
-            <Link href="/">
-              <div className="absolute top-7 left-7">
-                <Arrow />
+            <div className="flex flex-row ">
+              <Link href="javascript:history.back()">
+                <div className="absolute top-7 left-7">
+                  <FaArrowLeft size={38} />
+                </div>
+              </Link>
+              <div className="text-center">
+                <p className=" text-[64px]">DASHBOARD CONTROL MANUFACTURING</p>
+                <p className=" text-[48px]">{dayDate}</p>
               </div>
-            </Link>
-            <div className="text-center">
-              <p className=" text-[64px]">DASHBOARD CONTROL MANUFACTURING</p>
-              <p className=" text-[48px]">{dayDate}</p>
-            </div>
             </div>
           </div>
           <div className=" w-full h-full p-5 m-7">
