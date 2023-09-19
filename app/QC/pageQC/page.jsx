@@ -62,10 +62,10 @@ export default async function halQc() {
                 </div>
                 <div>
                   <div className="flex flex-row p-5 gap-5 ">
-                    <div className="w-full rounded-lg bg-[#d9d9d9] p-5 ">
+                    <div className="w-full rounded-lg bg-[#d9d9d9] p-3 ">
                       <OQCData />
                     </div>
-                    <div className="w-full rounded-lg bg-[#d9d9d9] p-5">
+                    <div className="w-full rounded-lg bg-[#d9d9d9] p-3">
                       <IPQCData />
                     </div>
                   </div>
@@ -77,10 +77,10 @@ export default async function halQc() {
                 </div>
                 <div>
                   <div className="flex flex-row p-5 gap-5 ">
-                    <div className="w-full rounded-xl bg-[#d9d9d9] p-5 ">
+                    <div className="w-full rounded-xl bg-[#d9d9d9] p-3">
                       <OQCData />
                     </div>
-                    <div className="w-full rounded-xl bg-[#d9d9d9] p-5">
+                    <div className="w-full rounded-xl bg-[#d9d9d9] p-3">
                       <IPQCData />
                     </div>
                   </div>

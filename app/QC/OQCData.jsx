@@ -33,7 +33,7 @@ export default async function OQCData() {
       {data.map((d) => (
         <div
           key={d.id}
-          className={`card  rounded-lg text-center my-2 p-1
+          className={`card  rounded-lg text-center m-2 p-1
                                                 ${
                                                   d.percen > 100
                                                     ? "bg-[#BB2525]"
@@ -41,7 +41,7 @@ export default async function OQCData() {
                                                 }`}
         >
           <p className="text-white text-[35px]">{d.section}</p>
-          <p className="text-white text-[50px]">{d.percen.toFixed(2)}%</p>
+          <p className="text-white text-[45px]">{d.percen.toFixed(2)}%</p>
         </div>
       ))}
     </>
